@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+transformers
+torch
+torchvision
+safetensors
+pillow
+opencv-python
+numpy
+python-dotenv
+twilio
+websockets
+python-multipart

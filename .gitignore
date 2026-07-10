@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+node_modules/
+.vscode/
+backend/uploads/
+backend/model/model.safetensors
+backend/model/*.bin
+backend/model/*.pt
+backend/model/*.pth
+.pytest_cache/
+.DS_Store
+Thumbs.db

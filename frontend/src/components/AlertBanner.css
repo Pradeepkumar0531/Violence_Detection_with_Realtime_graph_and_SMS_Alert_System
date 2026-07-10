@@ -1,0 +1,113 @@
+.alert-banner {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: min(560px, calc(100% - 40px));
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 59, 92, 0.95), rgba(200, 30, 60, 0.95));
+  border: 1px solid rgba(255, 120, 140, 0.3);
+  box-shadow: 0 16px 48px rgba(255, 59, 92, 0.35), 0 0 0 1px rgba(255, 59, 92, 0.1);
+  animation: slide-down 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(20px);
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 14px;
+}
+
+.alert-icon-wrapper {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  animation: icon-pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes icon-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.alert-icon {
+  font-size: 22px;
+}
+
+.alert-text {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+.alert-detail {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.alert-time {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.alert-dismiss {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.alert-dismiss:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.alert-progress {
+  height: 3px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.alert-progress-bar {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: progress-shrink linear forwards;
+  transform-origin: left;
+}
+
+@keyframes progress-shrink {
+  from { width: 100%; }
+  to { width: 0%; }
+}
