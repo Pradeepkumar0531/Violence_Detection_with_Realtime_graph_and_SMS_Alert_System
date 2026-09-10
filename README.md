@@ -17,10 +17,15 @@ The system is designed as a prototype for smart surveillance environments.
 ✨ Features
 
 ✅ violence detection from video input 
+
 ✅ Violence probability scoring (0–1 scale)
+
 ✅ Live graph visualization synchronized with video playback
+
 ✅ Automated SMS alerts using threshold-based triggering
+
 ✅ Interactive frontend dashboard 
+
 ✅ Deep learning–based video understanding
 
 🏗️ System Architecture
