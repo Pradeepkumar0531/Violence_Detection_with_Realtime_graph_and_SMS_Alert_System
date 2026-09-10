@@ -1,4 +1,4 @@
-Violence Detection System with   Graph and SMS Alert
+### Violence Detection System with   Graph and SMS Alert
 
 An AI-powered surveillance system that detects violent activities from video streams in real time and automatically sends alerts when suspicious behavior is detected.
 
