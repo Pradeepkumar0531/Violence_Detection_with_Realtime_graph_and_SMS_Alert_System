@@ -31,17 +31,29 @@ The system is designed as a prototype for smart surveillance environments.
 🏗️ System Architecture
 
 Video Input 
+
 ↓ 
+
 Frame Extraction (OpenCV)
+
 ↓
+
 VideoMAE Violence Detection Model 
+
 ↓
+
 Violence Probability Score 
+
 ↓
+
 Graph Visualization
+
 ↓
+
 Threshold Evaluation 
+
 ↓
+
 SMS Alert System
 
 🧠 Tech Stack
